@@ -1,16 +1,30 @@
 # Sudoku Validator (Kotlin)
-A Kotlin implementation to validate Sudoku boards of various sizes, supporting both classic 9×9 and larger 16×16 variants.
+
+  
+*Complete validation workflow*
+
+A robust Kotlin implementation to validate Sudoku boards of various sizes, with comprehensive rule checking.
 
 ## Features
 
-✅ **Multi-size Support**  
-   - Validates N×N boards where N is a perfect square (4, 9, 16, etc.)
+### Multi-Size Support
+- Validates N×N boards where N is a perfect square (4, 9, 16, etc.)
+- Automatically adapts validation rules based on board size
 
-✅ **Rule Enforcement**  
-   - Row validation (no duplicates)
-   - Column validation (no duplicates)
-   - Character validation (1-9 for standard, A-G for 16×16)
+### Comprehensive Rule Checks
+ 
+- **Row validation**: No duplicates in any row
+- **Column validation**: No duplicates in any column
+- **Character validation**: 
+  - 1-9 for standard Sudoku (≤9×9)
+  - 1-9 and A-G for 16×16 variants
 
-✅ **Flexible Input**  
-   - Empty cells represented by `'-'`
-![Alt Text](./Screenshot%202025-04-04%20195712.png)
+
+
+![Alt Text](./fullflowchart.png)
+
+![Alt Text](./firstpart.png)
+
+![Alt Text](./secondpart.png)
+
+![Alt Text](./thirdpart.png)
